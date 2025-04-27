@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Bug Bytes</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div></div>
+    <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <div class="dropdown" id="lessons-dropdown">
+            <button class="dropbtn">Lessons ▼</button>
+            <div class="dropdown-content">
+                <a href="lesson1.html">Lesson 1</a>
+                <a href="#">Lesson 2</a>
+                <a href="#">Lesson 3</a>
+            </div>
+        </div>
+        <a href="/shop.html" id="shop-bar">Shop</a>
+        <a href="#">About Us</a>
+        <a href="/register.html" id="login-bar">Login/Register</a>
+    </div>
+    <div class="profile-container">
+        <a href="/profile.html" id="profile-icon">
+            <img src="images/profile-icon.png" alt="Profile">
+        </a>
+    </div>
+</nav>
+
+<div class="shop-container">
+    <div class="menu-box">
+        <button class="tab active" id="monkey">Monkey</button>
+        <button class="tab" id="hat">Hat</button>
+    </div>
+
+    <div class="right-preview-box" id="preview-box">
+        <h2>Welcome to the Shop!</h2>
+        <p>Select a category from the left menu to preview items.</p>
+    </div>
+
+    <div class="char-preview-box">
+        <h3>Preview</h3>
+        <div class="character-display">
+            <img id="char-image" src="" alt="Character Preview">
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/shop.js"></script>
+<script type="module" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../fonts/PixeloidMono.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p, ul, ol, li, h1, h2, h3, h4, h5, h6, button, a, div, table, tr, td, option, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PixelFont' ,Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    margin: 0 1rem;
+    font-size: inherit;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+    min-height: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.dropbtn:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links .dropdown {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a#login-bar {
+    background-color: #4CAF50;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.nav-links a#login-bar:hover {
+    background-color: #45a049;
+}
+
+.nav-links a#login-bar:active {
+    background-color: #3d8b40;
+}
+
+#profile-icon {
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-icon img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#profile-icon.show {
+    display: flex;
+}
+
+#profile-icon:hover {
+    opacity: 0.8;
+}
+
+.profile-container {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 32px;
+}
+
+
+.main-content {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}

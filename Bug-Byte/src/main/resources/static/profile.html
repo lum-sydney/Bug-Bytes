@@ -1,0 +1,55 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css/homepage.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div></div>
+  <div class="nav-links">
+    <a href="/index.html">Home</a>
+    <div class="dropdown" id="lessons-dropdown">
+      <button class="dropbtn">Lessons ▼</button>
+      <div class="dropdown-content">
+        <a href="lesson1.html">Lesson 1</a>
+        <a href="#">Lesson 2</a>
+        <a href="#">Lesson 3</a>
+      </div>
+    </div>
+    <a href="/shop.html" id="shop-bar">Shop</a>
+    <a href="#">About Us</a>
+    <a href="/register.html" id="login-bar">Login/Register</a>
+  </div>
+  <div class="profile-container">
+    <a href="/profile.html" id="profile-icon">
+      <img alt="Profile">
+    </a>
+  </div>
+</nav>
+
+
+<div class="main-content">
+  <h1>My Profile</h1>
+  <div class="profile-details">
+    <div class="profile-header">
+      <img  class="profile-pic" id="profile-pic"/>
+      <h2 class="user-name" id="user-name-text">User's Display Name</h2>
+    </div>
+    <div class="profile-info">
+      <p id="profile-email-text"></p>
+      <p id="profile-points-text"></p>
+      <p id="profile-question-completed"></p>
+
+    </div>
+    <button class="logout-button" id="logout-btn">Logout</button>
+  </div>
+</div>
+
+<script type="module" src="js/common.js"></script>
+<script type="module" src="js/profile.js"></script>
+</body>
+</html>

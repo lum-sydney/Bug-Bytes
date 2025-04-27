@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 - Bug Bytes</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div></div>
+    <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <div class="dropdown" id="lessons-dropdown">
+            <button class="dropbtn">Lessons ▼</button>
+            <div class="dropdown-content">
+                <a href="lesson1.html">Lesson 1</a>
+                <a href="#">Lesson 2</a>
+                <a href="#">Lesson 3</a>
+            </div>
+        </div>
+        <a href="/shop.html" id="shop-bar">Shop</a>
+        <a href="#">About Us</a>
+        <a href="/register.html" id="login-bar">Login/Register</a>
+    </div>
+    <div class="profile-container">
+        <a href="/profile.html" id="profile-icon">
+            <img src="images/profile-icon.png" alt="Profile">
+        </a>
+    </div>
+</nav>
+
+<main class="lesson-container">
+    <article>
+        <h1>Lesson 1: <span style="color: green;">Introduction</span></h1>
+        <h2>Welcome to the <span style="color: green;">Jungle</span> of <span style="color: orange;">Java!</span></h2>
+        <section>
+            <p>
+                Welcome <span style="font-weight:bold; color: purple;" class="user-name">User</span>, at Bug Bytes,
+                we believe learning to code should be <span style="font-weight:bold;">fun, curious,</span> and just a little <span style="color:orange; font-style:italic;">wild</span>
+                —just like our monkey mascot! If you’re brand new to programming, Java is a great place to start. It’s a powerful, <span style="color:green; font-weight:bold;">beginner-friendly</span>
+                language that’s been swinging through the trees of tech for decades.
+            </p>
+            <p>
+                Java is used to build <span style="font-weight:bold;">all sorts of things</span> — from <span style="color: teal;">mobile apps</span> and
+                <span style="color: teal;">games</span> to <span style="color: teal;">websites</span> and software that run big businesses. But don’t worry, we’ll start
+                with the basics and <span style="font-style:italic; color: green;">climb up together</span>.
+            </p>
+            <p>Here’s why Java is a great first branch to grab onto:</p>
+            <ul class="lesson-list">
+                <li>
+                    <span style="font-weight:bold; color: red;">Beginner-Friendly</span> – Java uses simple, readable
+                    English-like syntax. Perfect for first-timers!
+                </li>
+                <li>
+                    <span style="font-weight:bold; color: darkblue;">Teaches You Solid Logic</span> – You’ll learn how
+                    to think like a programmer and solve problems step by step.
+                </li>
+                <li>
+                    <span style="font-weight:bold; color: fuchsia;">Used Everywhere</span> – Java runs on billions of
+                    devices (yep, even that old smart fridge).
+                </li>
+                <li>
+                    <span style="font-weight:bold; color: saddlebrown;">Builds Strong Foundations</span> – Many
+                    other languages borrow from Java, so you’ll be learning skills that transfer.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Setting Up Your Environment: Installing <span style="color: orange;">Java</span> and
+                <span style="color: blue; font-weight:bold;">Eclipse</span></h2>
+
+            <p>
+                Before we begin <span style="font-weight:bold;">writing code</span>, it’s important to set up the
+                tools needed to develop and run Java programs. This includes installing the
+                <span style="background-color:lightgrey;">Java Development Kit (JDK)</span> and an
+                <span style="background-color:lightblue;">Integrated Development Environment (IDE)</span>.
+                In this guide, we’ll be using <span style="color: blue; font-weight:bold;">Eclipse</span>,
+                a widely-used and beginner-friendly IDE for Java development.
+            </p>
+
+            <h3>Installing the <span style="color: green;">Java Development Kit (JDK)</span></h3>
+
+            <p>The <span style="background-color:lightgrey; font-weight:bold;">Java Development Kit (JDK)</span>
+                is a software package that provides the necessary tools to write, compile, and run Java programs.
+                It includes the Java Runtime Environment (JRE), the Java compiler, and other essential components.
+                If you want to learn more about JDKs read this
+                <a href="https://aws.amazon.com/what-is/java-runtime-environment/" target="_blank">article</a>.</p>
+
+            <p>
+                <span style="font-weight:bold;">Note:</span> If you already have a JDK installed, you can
+                skip this step.
+            </p>
+
+            <p><strong>Steps to Install the <span style="color: green;">JDK</span>:</strong></p>
+            <ol class="lesson-steps">
+                <li>Visit the official Oracle JDK download page
+                    <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">here</a>.
+                </li>
+                <li>Download the latest version of the JDK for your operating system (Windows, macOS, or Linux).</li>
+                <li>Run the installer and follow the setup instructions. The default options are usually sufficient.</li>
+                <li>After installation, verify the setup by opening a terminal or command prompt and typing: java -version</li>
+                <li>If the JDK is installed correctly, you'll see the version number of the JDK in the output.</li>
+            </ol>
+
+            <h3>Installing Eclipse IDE</h3>
+            <p>An <span style="background-color:lightblue; font-weight:bold;">Integrated Development Environment (IDE)</span>
+                provides a user-friendly interface to write, organize, and debug your code. Eclipse is a popular choice for
+                Java because of its robust features and support for beginners. To learn more about IDEs read this
+                <a href="https://aws.amazon.com/what-is/ide/" target="_blank">article</a>.</p>
+
+            <p><strong>Steps to Install <span style="color: blue; font-weight:bold;">Eclipse:</span></strong></p>
+            <ol class="lesson-steps">
+                <li>Go to the Eclipse Downloads page
+                    <a href="https://www.eclipse.org/downloads/" target="_blank">here</a>.</li>
+                <li>Click on the “Download” button under “Eclipse IDE for Java Developers.”</li>
+                <li>Open the installer, select “Eclipse IDE for Java Developers”, and proceed with the installation.</li>
+                <li>Once installed, launch Eclipse. You’ll be asked to select a workspace, which is a folder
+                    where your Java projects will be saved.</li>
+            </ol>
+
+            <p>With both the JDK and Eclipse installed, your development environment is ready.
+                In the next section, we’ll create your first Java program and walk through the basic structure
+                of Java code.</p>
+            </section>
+            <section>
+                <h2>Writing Your First <span style="color:orange;">Java Program</span>: Basic Syntax and Structure</h2>
+                <p>Now that your development environment is ready, it’s time to write your first Java program.
+                    This section will introduce you to the basic structure of a Java program and guide you through
+                    creating and running your first file using Eclipse.</p>
+
+                <h3 class="lesson-subheading">Understanding <span style="color:green;">Java Syntax and Structure</span></h3>
+                <p>Java is a statically typed, object-oriented programming language. While we’ll explore those terms
+                    more deeply later, here’s a simple breakdown of what a basic Java program looks like:</p>
+                <div class="code-block">
+        <pre class="language-java"><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}</code></pre>
+
+            </div>
+
+            <p>Let’s break this down:</p>
+            <ul class="lesson-list">
+                <li><span class="highlight-bulletpoint" style="color: orangered;">public class HelloWorld</span> –
+                    Defines a class named <strong>HelloWorld</strong>. In Java, applications always start inside
+                    a class.</li>
+                <li><span class="highlight-bulletpoint" style="color: midnightblue;">public static void main(String[] args)</span> –
+                    The main method, which serves as the entry point for every Java program.</li>
+                <li><span class="highlight-bulletpoint" style="color: green;">System.out.println("Hello, world!");</span> –
+                    This prints the text to the console; your program’s first output.</li>
+            </ul>
+                <h3>Creating and Running a Java File in <span style="color: blue; font-weight:bold;">Eclipse</span></h3>
+                <p>Let’s walk through creating this simple program in Eclipse.</p>
+                <ol>
+                    <li>Open Eclipse and select your
+                        <span style="font-weight:bold; background-color:lightgrey;">workspace</span>
+                        folder if prompted.</li>
+                    <li>Go to the top menu and select: <span style="background-color:lightblue;">File > New > Java Project</span>.</li>
+                    <li>Name your project (e.g., FirstProgram) and click <span style="font-weight:bold; color:seagreen">Finish</span>.</li>
+                    <li>In the <span style="font-weight:bold;">Project Explorer</span> (usually on the left), right-click on
+                        the <span style="font-weight:bold; color:seagreen">src</span> folder: <span style="background-color:lightblue;">New > Class</span>.</li>
+                    <li>In the dialog that appears:
+                        <ul class="lesson-steps">
+                            <li>Name your class <span style="font-weight:bold; color:seagreen">HelloWorld</span>.</li>
+                            <li>Check the box that says "<span style="font-weight:bold; color:seagreen">public static void main(String[] args)</span>" to automatically generate the main method.</li>
+                            <li>Click <span style="font-weight:bold;">Finish</span>.</li>
+                        </ul>
+                    </li>
+                    <li>Eclipse will create a new <span style="font-weight:bold; color:seagreen">.java</span> file
+                        and open it in the editor. Inside the <span style="font-weight:bold; color:seagreen">main</span>
+                        method, type the following line:
+                        <pre class="language-java"><code>System.out.println("Hello, world!");</code></pre>
+                    </li>
+                    <li>To run the program, right-click anywhere in the editor and select:
+                        <span style="background-color:lightblue;">Run As > Java Application</span>.</li>
+                    <li>You should see the output "<span style="font-weight:bold; color:seagreen">Hello, world!</span>"
+                        appear in the <span style="font-weight:bold;">Console</span> panel at the bottom.</li>
+                </ol>
+
+                <p>Congratulations! You've just written and executed your first Java program.
+                    This small step is the foundation of everything you'll build from here—apps, games, tools, and more.
+                    In the next section, we'll dive deeper into variables, data types, and basic operations,
+                    which are essential for creating interactive and meaningful programs. But first, let's do our
+                    first question.</p>
+
+        <div class="lesson-question" id="multi-1">
+            <h2 class="lesson-subheading">Question 1: Your First MCQ Question</h2>
+            <p><strong>Which of the following statements about the Java program below is TRUE?</strong></p>
+
+            <div class="code-block">
+        <pre class="language-java"><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}</code></pre>
+            </div>
+
+            <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="answer" value="1">The program will produce an error because it is missing a mainClass() method.</label>
+                <label class="quiz-option"><input type="radio" name="answer" value="2"> The line System.out.println("Hello, world!");is used to declare a variable.</label>
+                <label class="quiz-option"><input type="radio" name="answer" value="3"> The class must be named Main in order for the program to run.</label>
+                <label class="quiz-option"><input type="radio" name="answer" value="4"> The method main is the entry point where the program begins executing.</label>
+            </div>
+
+            <button type="button" class="submit-btn">Submit</button>
+            <p class="result-txt"></p>
+        </div>
+        </section>
+        <section>
+            <h2>Variables and Data Types: Storing <span style="color:orange;">Information</span> in Java</h2>
+            <p>
+                Now that you've written your first program, it’s time to start making your code more dynamic. Programs often need to
+                store and work with data such as numbers, text, or even true/false values. In Java, we do this using <span style="font-weight:bold; color:green;">variables</span>.
+            </p>
+
+            <h3>What Is a <span style="color:green;">Variable</span>?</h3>
+            <p>
+                A <span style="font-weight:bold; color:green;">variable</span> is like a labeled container in your computer’s memory. You give it a name and store a value in it, so you can use that value later in your program.
+            </p>
+            <p><strong>Example:</strong></p>
+            <div class="code-block">
+                <pre class="language-java"><code>int age = 25;</code></pre>
+            </div>
+            <p>
+                Here, we're creating a variable named <span style="font-weight:bold; color:teal;">age</span>, giving it a value of <span style="font-weight:bold; color:teal;">25</span>, and specifying that
+                it holds an integer (whole number) using the keyword <span style="font-weight:bold; color:red;">int</span>.
+            </p>
+
+            <h3>Common <span style="color:orange;">Java Data Types</span></h3>
+            <p>Java is a <span style="font-weight:bold; color:darkblue;">statically-typed</span> language, which means you must specify what type of data a variable will hold when you create it.</p>
+
+            <table class="variable-table">
+                <thead>
+                <tr>
+                    <th>Java Variable Type</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><span style="font-weight:bold; color:red;">int</span></td>
+                    <td>Stores whole numbers without decimals.</td>
+                    <td><code>int count = 10;</code></td>
+                </tr>
+                <tr>
+                    <td><span style="font-weight:bold; color:red;">double</span></td>
+                    <td>Decimal numbers.</td>
+                    <td><code>double price = 5.99;</code></td>
+                </tr>
+                <tr>
+                    <td><span style="font-weight:bold; color:red;">char</span></td>
+                    <td>Single characters (letters).</td>
+                    <td><code>char grade = 'A';</code></td>
+                </tr>
+                <tr>
+                    <td><span style="font-weight:bold; color:red;">boolean</span></td>
+                    <td>True or false values.</td>
+                    <td><code>boolean isActive = true;</code></td>
+                </tr>
+                <tr>
+                    <td><span style="font-weight:bold; color:red;">String</span></td>
+                    <td>Sequences of characters (text).</td>
+                    <td><code>String name = "Luna";</code></td>
+                </tr>
+                </tbody>
+            </table>
+            <p><strong>Note:</strong> <span style="font-weight:bold; color:red;">String</span> is not a primitive type like the others—it's actually a class—but
+                it's used often enough that it's treated like a basic type in early learning.</p>
+
+            <h3>Declaring and Using <span style="color:green;">Variables</span></h3>
+            <p>Here's how you declare a variable and use it in a simple program:</p>
+            <div class="code-block">
+    <pre class="language-java"><code>public class VariablesExample {
+    public static void main(String[] args) {
+        String name = "Alex";
+        int age = 21;
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}</code></pre>
+            </div>
+            <div class="code-block">
+                <p>When you run this program, you should see the following output:</p>
+                <pre class="language-java"><code>Name: Alex
+Age: 21</code></pre>
+            </div>
+            <p><strong>Note:</strong> You can choose any variable name you like, but it must start with a letter and can only contain letters, numbers, and underscores.</p>
+
+            <p>In this example:</p>
+            <ul class="lesson-list">
+                <li>We store a <span style="color:teal;">name</span> and an <span style="color:teal;">age</span> in variables.</li>
+                <li>We use the <span style="font-weight:bold; color:purple;">+</span> operator to concatenate strings.</li>
+                <li>We use the <span style="font-weight:bold; color:orange;">System.out.println()</span> method to print the output.</li>
+            </ul>
+
+            <p>Understanding <span style="font-weight:bold; color:green;">variables</span> and <span style="font-weight:bold; color:orange;">data types</span> is a crucial step
+                in writing real programs. They allow you to create programs that react to and store different types of information, making your code much more powerful and flexible.</p>
+            <div class="lesson-question" id="select-1">
+                <h2 class="lesson-subheading">Question 2: Your First Fill-in-the-blank Question</h2>
+                <p>
+                    In Java, a variable that holds true or false values is declared using the
+                    <select name="answer" class="dropdown-answer">
+                        <option value="" disabled selected>Select answer</option>
+                        <option value="1">int</option>
+                        <option value="2">char</option>
+                        <option value="3">boolean</option>
+                        <option value="4">double</option>
+                        <option value="5">String</option>
+                    </select>
+                    data type.
+                </p>
+
+                <button class="submit-btn">Submit Answer</button>
+
+                <p class="result-txt"></p>
+            </div>
+
+            <div class="lesson-question" id="multi-2">
+                <h2 class="lesson-subheading">Question 3: More Variable Practice</h2>
+                <p><strong>Which of the following correctly declares a variable to store a single character, such as the letter 'A'?</strong></p>
+                <div class="quiz-options">
+                    <label class="quiz-option"><input type="radio" name="answer" value="1">String grade = A;</label>
+                    <label class="quiz-option"><input type="radio" name="answer" value="2">char grade = 'A';</label>
+                    <label class="quiz-option"><input type="radio" name="answer" value="3">abc grade = 'A';</label>
+                    <label class="quiz-option"><input type="radio" name="answer" value="4">character grade = 'A';</label>
+                </div>
+                <button class="submit-btn">Submit Answer</button>
+                <p class="result-txt"></p>
+                </div>
+            <div class="lesson-question code-upload-question" id="code-1">
+                <h3>Question 4: Write the Code Variable Practice</h3>
+                <p>Write a Java program that:</p>
+                <ul class="lesson-list">
+                    <li>Declares an integer variable named <span style="color: tomato">x</span> and sets its value to <span style="color: tomato">7</span></li>
+                    <li>Prints the exact line:</li>
+                </ul>
+                <div class="code-block">
+                    <pre class="language-java"><code>The value of x is 7</code></pre>
+                </div>
+                <p>Requirements:</p>
+                <ul class="lesson-list">
+                    <li>You must declare an int variable named <span style="color: tomato">x</span> and assign it the value <span style="color: tomato">7</span></li>
+                    <li>You must use <span style="color: tomato">System.out.println</span> to print the output</li>
+                    <li>The output must exactly match: <span style="color: tomato">The value of x is 7</span></li>
+                </ul>
+                <div class="button-container">
+                    <input type="file" id="fileUpload1" accept=".java" style="display: none;" class="fileUpload">
+                    <label  for="fileUpload1" class="upload-btn">Browse File</label>
+                    <button type="button" class="submit-btn">Submit Answer</button>
+                </div>
+                <p class="result-txt"></p>
+            </div>
+        </section>
+    </article>
+</main>
+
+</body>
+<script type="module" src="js/common.js"></script>
+<script type="module" src="js/lesson1.js"></script>
+</html>

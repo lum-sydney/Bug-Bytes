@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <div></div>
+  <div class="nav-links">
+    <a href="/index.html">Home</a>
+    <div class="dropdown" id="lessons-dropdown">
+      <button class="dropbtn">Lessons ▼</button>
+      <div class="dropdown-content">
+        <a href="static/lesson1.html">Lesson 1</a>
+        <a href="#">Lesson 2</a>
+        <a href="#">Lesson 3</a>
+      </div>
+    </div>
+    <a href="/shop.html" id="shop-bar">Shop</a>
+    <a href="#">About Us</a>
+    <a href="/register.html" id="login-bar">Login/Register</a>
+  </div>
+  <div class="profile-container">
+    <a href="/profile.html" id="profile-icon">
+      <img src="" alt="Profile">
+    </a>
+  </div>
+</nav>

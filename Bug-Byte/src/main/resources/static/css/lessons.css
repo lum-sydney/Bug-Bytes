@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../fonts/PixeloidMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-text {
+    font-family: 'PT Mono';
+    src: url('../fonts/PTMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoContainer {
+  width: 1100px;
+    height: 550px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:10px;
+
+}
+
+.lessonImage img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+}
+
+.lessonBtn {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bug Bytes</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<nav class="navbar">
+    <div></div>
+    <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <div class="dropdown" id="lessons-dropdown">
+            <button class="dropbtn">Lessons ▼</button>
+            <div class="dropdown-content">
+                <a href="lesson1.html">Lesson 1</a>
+                <a href="#">Lesson 2</a>
+                <a href="#">Lesson 3</a>
+            </div>
+        </div>
+        <a href="/shop.html" id="shop-bar">Shop</a>
+        <a href="#">About Us</a>
+        <a href="/register.html" id="login-bar">Login/Register</a>
+    </div>
+    <div class="profile-container">
+        <a href="/profile.html" id="profile-icon">
+            <img src="images/profile-icon.png" alt="Profile">
+        </a>
+    </div>
+</nav>
+
+
+<div class="main-content">
+    <h1>Register to Bug Bytes</h1>
+
+    <div class="auth-container">
+        <form class="login-form" id="loginForm">
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" id="email" name="email">
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name">
+                <span class="error-message" id="username-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <span class="error-message" id="password-error"></span>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="auth-button" id="sign-up-btn" disabled="disabled">Sign up</button>
+                <div class="form-links">
+                    <a href="/login.html">Already have an account?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="module" src="js/register.js"></script>
+<script type="module" src="js/common.js"></script>
+</body>
+</html>
