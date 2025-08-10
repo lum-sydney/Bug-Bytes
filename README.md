@@ -1,5 +1,5 @@
 # Bug-Bytes
 
-Bug Bytes is a website that guides users into their first programming language. Our website provides guided lessons that will help with learning programming fundamentals, such as variables and writing basic functions. Learning a new coding language can feel overwhelming, and our goal is to give people a strong foundation and help them learn Java.
+Bug Bytes is a website that offers guided lessons and practice questions in Java, designed to help users build a strong foundation in introductory programming fundamentals, such as variables and writing basic functions.
 
-Created using html, css, javascript, java, sql, terminal, procreate, apache maven, spring boot.
+Created using HTML, CSS, SQL, Procreate, Shell Commands, Spring Boot, Java, and JavaScript alongside apache maven and apache2 server.
